@@ -1,0 +1,19 @@
+{
+  dogs(){
+    id
+    name
+  }
+}
+
+
+mutation {
+  createDog(
+    input:{ name: "Pluto 2"}
+  ) {
+    dog{
+      id
+      name
+    }
+  }
+}
+
