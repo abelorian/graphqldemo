@@ -1,24 +1,45 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Tutorial: https://graphql-ruby.org/getting_started
 
-* Ruby version
+## console graphql
 
-* System dependencies
+http://localhost:3000/graphiql
 
-* Configuration
 
-* Database creation
+## Querys
 
-* Database initialization
 
-* How to run the test suite
+```
+{
+  dogs(){
+    id
+    name
+  }
+}
+```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+```
+mutation {
+  createDog(
+    input:{ name: "Pluto"}
+  ) {
+    dog{
+      id
+      name
+    }
+  }
+}
+```
 
-* ...
+```
+{
+  dog(id: 1){
+    id
+    name
+  }
+}
+```
+
