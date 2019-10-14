@@ -13,7 +13,7 @@ http://localhost:3000/graphiql
 
 ```
 {
-  dogs(){
+  dogs{
     id
     name
   }
